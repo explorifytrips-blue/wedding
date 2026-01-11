@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman weds Aashika | Wedding Invitation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* --- CSS STYLES --- */
+      :root {
+        --primary-color: #800000; /* Maroon */
+        --gold-color: #d4af37; /* Gold */
+        --bg-color: #fff9f0; /* Cream */
+        --text-color: #333;
+      }
+
+      body {
+        font-family: "Merriweather", serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* Hero Section */
+      header {
+        /* Dark overlay with placeholder wedding background */
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 20px;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ganesh {
+        font-size: 2.5rem;
+        color: var(--gold-color);
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        margin: 10px 0;
+        font-weight: normal;
+        font-family: "Great Vibes", cursive;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: var(--gold-color);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+
+      .main-date {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+
+      /* Countdown */
+      #countdown {
+        margin-top: 40px;
+        font-size: 1.2rem;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: 1px solid var(--gold-color);
+        font-weight: bold;
+        min-height: 26px;
+      }
+
+      /* Sections */
+      section {
+        padding: 60px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        font-family: "Great Vibes", cursive;
+        position: relative;
+        display: inline-block;
+      }
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 3px;
+        background-color: var(--gold-color);
+        margin: 5px auto 0;
+      }
+
+      /* Couple Section - FIXED FOR MOBILE */
+      .couple-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .couple-card {
+        flex: 1;
+        min-width: 300px; /* Ensures name has space */
+      }
+      .couple-name {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .parents {
+        font-size: 0.95rem;
+        color: #666;
+        font-style: italic;
+        margin: 5px 0;
+      }
+      .divider-text {
+        font-family: "Great Vibes", cursive;
+        font-size: 2.5rem; /* Made slightly larger */
+        color: var(--gold-color);
+        margin: 0 15px;
+      }
+
+      /* Events Timeline */
+      .event-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        text-align: left;
+        border-left: 6px solid var(--primary-color);
+        transition: transform 0.2s;
+      }
+      .event-card:hover {
+        transform: translateY(-5px);
+      }
+      .event-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+      }
+      .event-date {
+        color: white;
+        background-color: var(--primary-color);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      .event-name {
+        font-size: 1.6rem;
+        color: #222;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .event-details {
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+      /* Map Button */
+      .map-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 25px;
+        background-color: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        transition: background 0.3s;
+        border: 1px solid var(--primary-color);
+      }
+      .map-btn:hover {
+        background-color: white;
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+      }
+
+      /* Family Section */
+      .family-box {
+        background-color: white;
+        padding: 30px;
+        border: 2px solid var(--gold-color);
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #222;
+        color: #ccc;
+        padding: 50px 20px;
+        margin-top: 40px;
+      }
+      .footer-names {
+        font-family: "Great Vibes", cursive;
+        font-size: 2rem;
+        color: var(--gold-color);
+        margin-bottom: 20px;
+      }
+
+      /* --- MOBILE SPECIFIC FIXES --- */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 3rem;
+        }
+        section {
+          padding: 50px 15px;
+        }
+
+        /* FORCE VERTICAL STACK FOR COUPLE ON MOBILE */
+        .couple-container {
+          flex-direction: column;
+        }
+        .divider-text {
+          margin: 15px 0; /* Add space above and below 'weds' */
+        }
+        .couple-card {
+          width: 100%;
+          min-width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="ganesh">|| श्री गणेशाय नमः ||</div>
+      <h1>Aman & Aashika</h1>
+      <h2>Are Getting Married</h2>
+
+      <div class="main-date">Saturday, 7 February 2026</div>
+
+      <div id="countdown"></div>
+    </header>
+
+    <section id="couple">
+      <div class="section-title">The Happy Couple</div>
+
+      <div class="couple-container">
+        <div class="couple-card">
+          <div class="couple-name">Aman</div>
+          <p class="parents">S/o Ashok Ji & Anita Silawat</p>
+          <p class="parents">Grandson of Late Babulal Ji & Shakunbai Silawat</p>
+        </div>
+
+        <div class="divider-text">weds</div>
+
+        <div class="couple-card">
+          <div class="couple-name">Aashika</div>
+          <p class="parents">D/o Sanjay Ji (Chantu) & Selvina Silawat</p>
+          <p class="parents">
+            Granddaughter of Late Bhagirath Ji & Sushila Silawat
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="section-title">Wedding Events</div>
+
+      <div class="event-card">
+        <div class="event-header">
+          <span class="event-date">Jan 31 & Feb 1, 2026</span>
+        </div>
+        <div class="event-name">Mata Pujan & Haldi</div>
+        <div class="event-details">
+          <p><strong>Mata Pujan:</strong> Saturday, 31 Jan</p>
+          <p><strong>Khal Mitti / Haldi:</strong> Sunday, 1 Feb</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-header">
+          <span class="event-date">Wednesday, 4 Feb 2026</span>
+        </div>
+        <div class="event-name">Shubh Lagan (Wedding)</div>
+        <div class="event-details">
+          <p>
+            <strong>Baraat Departure:</strong> 6:00 PM from Ankur Parisar,
+            Navlakha.
+          </p>
+          <p>
+            <strong>Venue:</strong> Rituraj Manglik Bhavan, Near Bengali School,
+            Indore
+          </p>
+        </div>
+        <a
+          href="https://www.google.com/maps/search/Rituraj+Manglik+Bhavan+Indore"
+          target="_blank"
+          class="map-btn"
+        >
+          📍 View Wedding Venue Map
+        </a>
+      </div>
+
+      <div
+        class="event-card"
+        style="
+          border-left: 6px solid var(--gold-color);
+          background-color: #fffdf5;
+        "
+      >
+        <div class="event-header">
+          <span
+            class="event-date"
+            style="background-color: var(--gold-color); color: #000"
+            >Saturday, 7 Feb 2026</span
+          >
+        </div>
+        <div class="event-name">Reception (Ashirwad Samaroh)</div>
+        <div class="event-details">
+          <p><strong>Time:</strong> 7:00 PM onwards</p>
+          <p>
+            <strong>Venue:</strong> Malhar Heritage Garden & Resort, New RTO
+            Road, Palda, Indore
+          </p>
+        </div>
+
+        <a
+          href="https://maps.app.goo.gl/g2etXqWwP5x4xNJL9?g_st=ac"
+          target="_blank"
+          class="map-btn"
+        >
+          📍 View Reception Location
+        </a>
+      </div>
+    </section>
+
+    <section id="family">
+      <div class="section-title">With Blessings From</div>
+      <div class="family-box">
+        <p>
+          <strong>Special Sender:</strong><br />
+          Shri Tulsi Ram Silawat (Cabinet Minister, MP Govt)
+        </p>
+
+        <p>
+          <strong>RSVP:</strong><br />
+          Ashok Ji & Anita Silawat<br />
+          Kamlesh Ji & Rekha Silawat<br />
+          Dr. Suresh Ji & Dr. Sudha Silawat
+        </p>
+
+        <p style="margin-top: 20px; font-weight: bold">
+          Contact: 9584730100, 9827339520
+        </p>
+
+        <p
+          style="
+            margin-top: 30px;
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #888;
+          "
+        >
+          "Nanna Nanna Paav Hamare Kaise Aaye Bulane Ko..."
+          <br />- Aarvika, Deva, Shivay, Vinayak, Rudra & Family
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-names">Aman & Aashika</div>
+      <p>Silawat Family, 41, Pawanpuri Colony, Palda, Indore (M.P.)</p>
+      <p><small>© 2026 Wedding Celebration</small></p>
+    </footer>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Feb 4, 2026 18:00:00").getTime();
+
+      // Function to update the timer
+      function updateTimer() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        // Display result
+        var displayString =
+          days + " Days " + hours + " Hours " + minutes + " Mins to Go";
+        document.getElementById("countdown").innerHTML = displayString;
+
+        // If the count down is finished
+        if (distance < 0) {
+          document.getElementById("countdown").innerHTML = "Happily Married!";
+        }
+      }
+
+      // Run function immediately so there is no "Loading" text delay
+      updateTimer();
+
+      // Update every 1 second
+      setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>
