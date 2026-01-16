@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aman weds Aashika | Wedding Invitation</title>
+    <title>अमन संग आशिका | शुभ विवाह</title>
+    <meta property="og:title" content="अमन संग आशिका - शुभ विवाह">
+    <meta property="og:description" content="आप हमारे विवाह समारोह में सादर आमंत्रित हैं।">
+    
     <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Tiro+Devanagari+Hindi&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -18,7 +21,7 @@
       }
 
       body {
-        font-family: "Merriweather", serif;
+        font-family: "Tiro Devanagari Hindi", serif; /* Hindi Body Font */
         margin: 0;
         padding: 0;
         background-color: var(--bg-color);
@@ -50,28 +53,30 @@
       }
 
       h1 {
-        font-size: 4.5rem;
+        font-size: 4rem; /* Adjusted for Hindi Title */
         margin: 10px 0;
         font-weight: normal;
-        font-family: "Great Vibes", cursive;
+        font-family: "Yatra One", cursive; /* Hindi Fancy Font */
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        line-height: 1.2;
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: var(--gold-color);
         letter-spacing: 2px;
-        text-transform: uppercase;
         margin-top: 0;
+        font-family: "Yatra One", cursive;
       }
 
       .main-date {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 20px;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         padding: 10px 20px;
         display: inline-block;
+        font-weight: bold;
       }
 
       /* Countdown */
@@ -96,9 +101,9 @@
 
       .section-title {
         color: var(--primary-color);
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin-bottom: 40px;
-        font-family: "Great Vibes", cursive;
+        font-family: "Yatra One", cursive;
         position: relative;
         display: inline-block;
       }
@@ -124,19 +129,18 @@
         min-width: 300px; /* Ensures name has space */
       }
       .couple-name {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         color: var(--primary-color);
-        font-weight: bold;
+        font-family: "Yatra One", cursive;
         margin-bottom: 5px;
       }
       .parents {
-        font-size: 0.95rem;
+        font-size: 1rem;
         color: #666;
-        font-style: italic;
         margin: 5px 0;
       }
       .divider-text {
-        font-family: "Great Vibes", cursive;
+        font-family: "Yatra One", cursive;
         font-size: 2.5rem; /* Made slightly larger */
         color: var(--gold-color);
         margin: 0 15px;
@@ -169,19 +173,21 @@
         background-color: var(--primary-color);
         padding: 5px 15px;
         border-radius: 20px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: bold;
       }
       .event-name {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: #222;
         font-weight: bold;
+        font-family: "Yatra One", cursive;
         width: 100%;
         margin-top: 10px;
       }
       .event-details {
         color: #555;
         margin-bottom: 15px;
+        font-size: 1.1rem;
       }
 
       /* Map Button */
@@ -193,7 +199,7 @@
         color: white;
         text-decoration: none;
         border-radius: 4px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: bold;
         transition: background 0.3s;
         border: 1px solid var(--primary-color);
@@ -221,7 +227,7 @@
         margin-top: 40px;
       }
       .footer-names {
-        font-family: "Great Vibes", cursive;
+        font-family: "Yatra One", cursive;
         font-size: 2rem;
         color: var(--gold-color);
         margin-bottom: 20px;
@@ -230,7 +236,7 @@
       /* --- MOBILE SPECIFIC FIXES --- */
       @media (max-width: 768px) {
         h1 {
-          font-size: 3rem;
+          font-size: 3.2rem;
         }
         section {
           padding: 50px 15px;
@@ -253,63 +259,63 @@
   <body>
     <header>
       <div class="ganesh">|| श्री गणेशाय नमः ||</div>
-      <h1>Aman & Aashika</h1>
-      <h2>Are Getting Married</h2>
+      <h1>अमन संग आशिका</h1>
+      <h2>परिणयोत्सव</h2>
 
-      <div class="main-date">Saturday, 7 February 2026</div>
+      <div class="main-date">शनिवार, 7 Feb 2026</div>
 
       <div id="countdown"></div>
     </header>
 
     <section id="couple">
-      <div class="section-title">The Happy Couple</div>
+      <div class="section-title">वर - वधु</div>
 
       <div class="couple-container">
         <div class="couple-card">
-          <div class="couple-name">Aman</div>
-          <p class="parents">S/o Ashok Ji & Anita Silawat</p>
-          <p class="parents">Grandson of Late Babulal Ji & Shakunbai Silawat</p>
+          <div class="couple-name">अमन</div>
+          <p class="parents">सुपुत्र: श्री अशोक जी एवं अनिता सिलावट</p>
+          <p class="parents">सुपौत्र: स्व. श्री बाबूलाल जी एवं शकुनबाई सिलावट</p>
         </div>
 
-        <div class="divider-text">weds</div>
+        <div class="divider-text">संग</div>
 
         <div class="couple-card">
-          <div class="couple-name">Aashika</div>
-          <p class="parents">D/o Sanjay Ji (Chantu) & Selvina Silawat</p>
+          <div class="couple-name">आशिका</div>
+          <p class="parents">सुपुत्री: श्री संजय जी (चंदु) एवं सेलवीना सिलावट</p>
           <p class="parents">
-            Granddaughter of Late Bhagirath Ji & Sushila Silawat
+            सुपौत्री: स्व. श्री भागीरथ जी एवं सुशीला सिलावट
           </p>
         </div>
       </div>
     </section>
 
     <section id="events">
-      <div class="section-title">Wedding Events</div>
+      <div class="section-title">मांगलिक कार्यक्रम</div>
 
       <div class="event-card">
         <div class="event-header">
-          <span class="event-date">Jan 31 & Feb 1, 2026</span>
+          <span class="event-date">31 Jan & 1 Feb 2026</span>
         </div>
-        <div class="event-name">Mata Pujan & Haldi</div>
+        <div class="event-name">माता पूजन एवं हल्दी</div>
         <div class="event-details">
-          <p><strong>Mata Pujan:</strong> Saturday, 31 Jan</p>
-          <p><strong>Khal Mitti / Haldi:</strong> Sunday, 1 Feb</p>
+          <p><strong>माता पूजन:</strong> शनिवार, 31 Jan</p>
+          <p><strong>खल मिट्टी / हल्दी:</strong> रविवार, 1 Feb</p>
         </div>
       </div>
 
       <div class="event-card">
         <div class="event-header">
-          <span class="event-date">Wednesday, 4 Feb 2026</span>
+          <span class="event-date">बुधवार, 4 Feb 2026</span>
         </div>
-        <div class="event-name">Shubh Lagan (Wedding)</div>
+        <div class="event-name">शुभ लग्न (पाणिग्रहण)</div>
         <div class="event-details">
           <p>
-            <strong>Baraat Departure:</strong> 6:00 PM from Ankur Parisar,
-            Navlakha.
+            <strong>बारात प्रस्थान:</strong> 6:00 PM, अंकुर परिसर,
+            नवलखा से।
           </p>
           <p>
-            <strong>Venue:</strong> Rituraj Manglik Bhavan, Near Bengali School,
-            Indore
+            <strong>स्थल:</strong> रितुराज मांगलिक भवन, बंगाली स्कूल के पास,
+            इंदौर
           </p>
         </div>
         <a
@@ -317,7 +323,7 @@
           target="_blank"
           class="map-btn"
         >
-          📍 View Wedding Venue Map
+          📍 विवाह स्थल का मैप देखें
         </a>
       </div>
 
@@ -332,15 +338,15 @@
           <span
             class="event-date"
             style="background-color: var(--gold-color); color: #000"
-            >Saturday, 7 Feb 2026</span
+            >शनिवार, 7 Feb 2026</span
           >
         </div>
-        <div class="event-name">Reception (Ashirwad Samaroh)</div>
+        <div class="event-name">आशीर्वाद समारोह (रिसेप्शन)</div>
         <div class="event-details">
-          <p><strong>Time:</strong> 7:00 PM onwards</p>
+          <p><strong>समय:</strong> 7:00 PM से आपके आगमन तक</p>
           <p>
-            <strong>Venue:</strong> Malhar Heritage Garden & Resort, New RTO
-            Road, Palda, Indore
+            <strong>स्थल:</strong> मल्हार हेरिटेज गार्डन एंड रिसोर्ट, न्यू RTO
+            रोड, पालदा, इंदौर
           </p>
         </div>
 
@@ -349,48 +355,53 @@
           target="_blank"
           class="map-btn"
         >
-          📍 View Reception Location
+          📍 रिसेप्शन स्थल का मैप देखें
         </a>
       </div>
     </section>
 
     <section id="family">
-      <div class="section-title">With Blessings From</div>
+      <div class="section-title">स्नेही स्वजन</div>
       <div class="family-box">
         <p>
-          <strong>Special Sender:</strong><br />
-          Shri Tulsi Ram Silawat (Cabinet Minister, MP Govt)
-        </p>
-
-        <p>
-          <strong>RSVP:</strong><br />
-          Ashok Ji & Anita Silawat<br />
-          Kamlesh Ji & Rekha Silawat<br />
-          Dr. Suresh Ji & Dr. Sudha Silawat
+          <strong>विशेष प्रेषक:</strong><br />
+          श्री तुलसीराम जी एवं सुनीता सिलावट <br />
+          श्री डॉ. सुरेश जी एवं डॉ. सुधा सिलावट <br />
+          श्री सतीश जी एवं संगीता सिलावट <br />
+          श्री नितिश (चिंटू) जी एवं कृति सिलावट <br />
+          श्री बंकिम जी एवं वसुधा सिलावट <br />
+          श्री अनादी जी एवं पलक सिलावट <br />
+          <br />
+          <strong>दर्शनाभिलाषी (RSVP):</strong><br />
+          अशोक जी (DAVV, Indore) एवं अनिता सिलावट<br />
+          गौरव जी एवं उर्वशी सोनकर<br />
+          प्रतीक सिलावट<br />
         </p>
 
         <p style="margin-top: 20px; font-weight: bold">
-          Contact: 9584730100, 9827339520
+          संपर्क: 9584730100, 9827339520
         </p>
 
         <p
           style="
             margin-top: 30px;
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-style: italic;
             color: #888;
           "
         >
-          "Nanna Nanna Paav Hamare Kaise Aaye Bulane Ko..."
-          <br />- Aarvika, Deva, Shivay, Vinayak, Rudra & Family
+          "नन्हे-नन्हे पांव हमारे कैसे आये बुलाने को...
+          <br />
+          हमारे मामाजी व चाचु की शादी में भूल ना जाना आने को..."
+          <br />- आरविका, देवा, शिवाय, विनायक, रुद्र, पीहू, लव, काव्या, देव, कृधा, कार्तिक, निमीशा, देवांशी एवं परिवार
         </p>
       </div>
     </section>
 
     <footer>
-      <div class="footer-names">Aman & Aashika</div>
-      <p>Silawat Family, 41, Pawanpuri Colony, Palda, Indore (M.P.)</p>
-      <p><small>© 2026 Wedding Celebration</small></p>
+      <div class="footer-names">अमन संग आशिका</div>
+      <p>सिलावट परिवार, 41, पवनपुरी कॉलोनी, पालदा, इंदौर (M.P.)</p>
+      <p><small>© 2026 शुभ विवाह</small></p>
     </footer>
 
     <script>
@@ -408,14 +419,14 @@
         );
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-        // Display result
+        // Display result (Hindi words, English digits)
         var displayString =
-          days + " Days " + hours + " Hours " + minutes + " Mins to Go";
+          days + " दिन " + hours + " घंटे " + minutes + " मिनट शेष";
         document.getElementById("countdown").innerHTML = displayString;
 
         // If the count down is finished
         if (distance < 0) {
-          document.getElementById("countdown").innerHTML = "Happily Married!";
+          document.getElementById("countdown").innerHTML = "शुभ विवाह संपन्न!";
         }
       }
 
